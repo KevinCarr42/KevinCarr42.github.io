@@ -10,18 +10,21 @@
     --accent: #59e1ff;
     --accent-2: #c95eff;
     --accent-orange: #f59e0b;
-    --accent-red: #ef4444;
-    --glow: rgb(255 0 255);
-    --accent-glow: color-mix(in srgb, var(--glow) 15%, transparent);
-    --hover-glow: color-mix(in srgb, var(--glow) 30%, transparent);
+    --accent-glow: rgba(255, 0, 255, 0.15);
+    --hover-glow: rgba(0, 200, 255, 0.30);
     --border: #27272a;
-    --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
 
     /* Color overlays (with transparency) */
     --nav-bg: rgba(10, 10, 11, 0.85);
     --border-hover: rgba(255, 255, 255, 0.1);
-    --border-hover-orange: rgba(245, 158, 11, 0.3);
-    --red-glow: rgba(239, 68, 68, 0.1);
+    --border-hover-highlight: rgba(11, 148, 245, 0.3);
+    --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+
+    /* Rock Opera Colors */
+    --accent-red: #931c1c;
+    --accent-red-2: #550000;
+    --red-glow: rgba(135, 0, 0, 0.4);
+    --gradient-rock-opera: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-red-2) 100%);
 
     /* Opacities */
     --grain-opacity: 0.03;
@@ -228,6 +231,16 @@ nav {
     color: var(--accent);
 }
 
+.btn-rock-opera {
+    background: var(--gradient-rock-opera);
+    color: var(--text-primary);
+}
+
+.btn-rock-opera:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px var(--red-glow);
+}
+
 /* Sections */
 section {
     padding: 6rem 4rem;
@@ -290,7 +303,7 @@ section {
 }
 
 .featured-card:hover {
-    border-color: var(--border-hover-orange);
+    border-color: var(--border-hover-highlight);
     transform: translateY(-4px);
 }
 
@@ -515,7 +528,7 @@ section {
     right: 0;
     width: 40%;
     height: 100%;
-    background: radial-gradient(ellipse at right, var(--red-glow) 0%, transparent 70%);
+    background: radial-gradient(ellipse at right, var(--accent-glow) 0%, transparent 70%);
 }
 
 .rock-opera-content {
