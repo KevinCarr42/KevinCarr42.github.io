@@ -92,9 +92,12 @@ nav {
 
 .logo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     letter-spacing: 0.15em;
-    color: var(--accent);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-links {
@@ -546,6 +549,7 @@ section {
 .rock-opera-description {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .rock-opera-credits {
@@ -556,12 +560,9 @@ section {
 }
 
 .rock-opera-visual {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--rock-opera-visual-size);
-    position: relative;
-    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Footer */

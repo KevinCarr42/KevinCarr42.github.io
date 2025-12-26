@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kevin Carr — Developer & Creative</title>
+  <title>Kevin Carr Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -18,15 +18,18 @@
     <li><a href="#tools">Tools</a></li>
     <li><a href="#creative">Creative</a></li>
     <li><a href="https://github.com/KevinCarr42" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/kevincarr42/" target="_blank">LinkedIn</a></li>
   </ul>
 </nav>
 
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-label">Developer • Data Scientist • Creative</p>
-    <h1>Building with <span>Code</span> & <span>Creativity</span></h1>
+    <p class="hero-label">Software Developer • Data Scientist • Creative Entrepreneur</p>
+    <h1><span>Code</span> & <span>Creativity</span></h1>
     <p class="hero-description">
-      From AI translation systems and machine learning pipelines to procedural music generation and animated rock operas — I build things that blend technical depth with creative vision.
+      Full-stack Python developer specializing in Django and machine learning,
+      with experience running multiple businesses, and a passion for creative
+      AI experiments in music, art, and game development.
     </p>
     <div class="hero-cta">
       <a href="#featured" class="btn btn-primary">View Featured Work</a>
@@ -45,31 +48,33 @@
       <p class="featured-label">Internal Application — Lead Developer</p>
       <h3 class="featured-title">CSAS Internal Application</h3>
       <p class="featured-description">
-        Led the development of an internal application for the Canadian Science Advisory Secretariat. Responsibilities included full-stack development, architecture decisions, stakeholder
-        coordination, and mentoring junior developers. This application streamlines scientific advisory processes for Fisheries and Oceans Canada.
+        Lead developer for an internal Django application used by thousands of government scientists across Canada to track scientific research from initial request through to publication. The application manages the entire research lifecycle — scientific research proposal, approvals, scheduling, stakeholder meetings, report writing, document review, translation, and publication tracking.
       </p>
-      <p class="featured-description" style="font-style: italic; color: var(--text-muted);">
-        (Repository is private — internal government project)
+      <p class="featured-description">
+        Database architecture was designed and implemented alongside REST APIs and a Vue.js frontend with responsive design. The tech stack includes MySQL, Django, and Vue.js, deployed on Linux with GitHub Actions for CI/CD. Business logic decisions are developed through direct collaboration with stakeholders, senior management, and the product owner.
       </p>
       <div class="featured-tech">
         <span class="tech-tag">Python</span>
         <span class="tech-tag">Django</span>
-        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">Vue.js</span>
         <span class="tech-tag">Full-Stack</span>
       </div>
+      <p class="featured-description" style="font-style: italic; color: var(--text-muted);">
+        (Repository is private — internal government project)
+      </p>
     </div>
 
     <div class="featured-card">
       <p class="featured-label">AI/ML Pilot Project — Lead Developer</p>
       <h3 class="featured-title">AI Translation Pipeline</h3>
       <p class="featured-description">
-        An AI-powered translation system fine-tuned on official CSAS documents to deliver faster, more accurate, and cost-effective English-to-French translations of scientific reports. Led this
-        proof-of-concept pilot project through multiple phases: data gathering and transformation, model fine-tuning, rules-based preferential translations, translation quality evaluation, and
-        integrated system development.
+        Lead for a proof-of-concept project to automate translation of scientific publications using fine-tuned sequence-to-sequence models in order to produce translations consistent with the style and terminology of previously published scientific research. This project aims to reduce translation bottlenecks in the publication pipeline while maintaining the quality standards required for government scientific publications.
       </p>
       <p class="featured-description">
-        The project demonstrated that AI translations are often superior to published translations, with significant improvements in consistency for scientific terminology and substantial reduction in
-        translation time and costs.
+        Responsible for all implementation decisions, from model selection and training infrastructure setup to fine-tuning and evaluation. Training runs are executed on a dedicated Linux server. Technical plans, methodology, and results were presented to senior management in plain language to secure approval for deployment.
+      </p>
+      <p class="featured-description">
       </p>
       <div class="featured-tech">
         <span class="tech-tag">Python</span>
@@ -131,7 +136,7 @@
         <a href="https://github.com/KevinCarr42/Small-Music-Model" target="_blank">Small Music Model</a>
       </h3>
       <p class="project-description">
-        A generative pretrained transformer used to generate chord progressions. Trained on data from Ultimate-Guitar.com to learn patterns in popular music chord sequences.
+        A pretrained transformer LLM trained from scratch using chord progressions scraped from the internet. The model generated chord progressions that are typical of Pop music, and tended to respect rules taught in standard music theory.
       </p>
       <p class="project-meta">Python • Transformers • GPT Architecture • PyTorch</p>
     </div>
@@ -144,7 +149,7 @@
         <a href="https://github.com/KevinCarr42/Saturns-Moons-Janus-and-Epimetheus" target="_blank">Saturn's Moons: Janus & Epimetheus</a>
       </h3>
       <p class="project-description">
-        An orbital mechanics simulation of two of Saturn's moons that share an orbit — visualizing the fascinating phenomenon of Janus and Epimetheus swapping positions every ~4 years.
+        An orbital mechanics simulation of two of Saturn's moons that share an orbit — visualizing the fascinating phenomenon of Janus and Epimetheus periodically swapping orbits.
       </p>
       <p class="project-meta">Python • Processing.py • Physics Simulation</p>
     </div>
@@ -158,8 +163,7 @@
         <a href="https://github.com/KevinCarr42/Billboard-100-Audio-Feature-Analytics" target="_blank">Billboard Hot 100 Analytics</a>
       </h3>
       <p class="project-description">
-        Machine learning analysis predicting Billboard Hot 100 chart success using Spotify audio features. Explores clustering, classification, and the relationship between audio features and song
-        popularity.
+        Machine learning analysis predicting Billboard Hot 100 chart success using Spotify audio features. Explores clustering, classification, and the relationship between audio features and song popularity.
       </p>
       <p class="project-meta">Python • Scikit-learn • Spotify API • ML Classification</p>
     </div>
@@ -173,8 +177,7 @@
         <a href="https://github.com/dfo-gulf-science/Gaspereau" target="_blank">Gaspereau Data Analysis</a>
       </h3>
       <p class="project-description">
-        Exploratory data analysis and data cleaning of Gaspereau fisheries data for integration into a larger database. My first contract at DFO — performing data validation, visualization, and
-        database import preparation.
+        My first contract at DFO. Exploratory data analysis and data cleaning of Gaspereau fisheries data for integration into a larger database. Involved performing data validation, visualization, and database import preparation.
       </p>
       <p class="project-meta">Python • Pandas • Data Cleaning • Django Import</p>
     </div>
@@ -183,8 +186,8 @@
 
 <section id="tools" class="small-section">
   <div class="section-header">
-    <p class="section-label">Audio Tools</p>
-    <h2 class="section-title">Audio Processing Utilities</h2>
+    <p class="section-label">Audio and Image Processing Tools</p>
+    <h2 class="section-title">Utilities for Art</h2>
   </div>
   <div class="projects-grid">
     <div class="project-card">
@@ -196,8 +199,7 @@
         <a href="https://github.com/KevinCarr42/LUFS-Calculations" target="_blank">LUFS Calculations</a>
       </h3>
       <p class="project-description">
-        A simple audio mastering tool that analyzes audio files to determine how much limiting is needed to reach target loudness levels. Outputs true peak, integrated LUFS, and volume adjustment
-        recommendations.
+        A simple audio mastering tool that analyzes audio files to determine how much limiting is needed to reach target loudness levels. Outputs true peak, integrated LUFS, and volume adjustment recommendations.
       </p>
       <p class="project-meta">Python • Audio Processing • Mastering</p>
     </div>
@@ -210,17 +212,11 @@
         <a href="https://github.com/KevinCarr42/Audio-Zero-Crossings" target="_blank">Audio Zero Crossings</a>
       </h3>
       <p class="project-description">
-        Zero-crossing analysis tool for audio signals — useful for clean audio editing, frequency estimation, and signal analysis.
+        A simple audio processing tool for cleaning up procedurally generated audio samples created in Ableton Live. This tool processes raw audio samples, fading in the first 6 samples to remove clicks, cropping to a desired length, and applying a custom fade-out. Useful for quickly editing a large number of samples created using techniques inspired by Ned Rush's procedural sample creation techniques on YouTube.
       </p>
       <p class="project-meta">Python • Signal Processing</p>
     </div>
-  </div>
 
-  <div class="section-header" style="margin-top: 4rem;">
-    <p class="section-label">Art Tools</p>
-    <h2 class="section-title">Creative Utilities</h2>
-  </div>
-  <div class="projects-grid">
     <div class="project-card">
       <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -230,7 +226,7 @@
         <a href="https://github.com/KevinCarr42/Python-Pixel-Art" target="_blank">Python Pixel Art</a>
       </h3>
       <p class="project-description">
-        Tools for creating and manipulating pixel art with Python — bridging code and visual creativity.
+        Converts images to pixelated, posterized art, using a defineable custom color palette. Optional cropping or stretching to match output aspect ratio. Optional blur before posterization for smoother results.
       </p>
       <p class="project-meta">Python • Image Processing</p>
     </div>
@@ -239,11 +235,67 @@
 
 <section id="creative">
   <div class="section-header">
-    <p class="section-label">Creative Work</p>
-    <h2 class="section-title">Music & Design</h2>
+    <p class="section-label">Creative Entrepreneurial Work</p>
+    <h2 class="section-title">Online Business Highlights</h2>
   </div>
-
   <div class="creative-grid">
+
+    <div class="creative-card">
+      <img class="creative-image" src="assets/images/dunning-kruger.jpg" alt="Dunning-Kruger Effect T-Shirt">
+      <div class="creative-content">
+        <h3 class="creative-title">
+          <a href="https://www.spreadshirt.ca/shop/design/the+dunning+kruger+effect+mens+t-shirt-D6309fd74b9bc177600cdc87f?sellable=Jk7YOG7m83hbXn8VlBQN-210-7" target="_blank">
+            The Dunning-Kruger Effect
+          </a>
+        </h3>
+        <p class="creative-description">
+          Best-selling t-shirt design featuring a humorous take on cognitive bias — perfect for the confidently incorrect.
+        </p>
+      </div>
+    </div>
+
+    <div class="creative-card">
+      <img class="creative-image" src="assets/images/get-rich.jpg" alt="How to get rich T-Shirt">
+      <div class="creative-content">
+        <h3 class="creative-title">
+          <a href="https://citationrequired.creator-spring.com/listing/how-to-get-rich?product=212&variation=5819" target="_blank">
+            How to Get Rich
+          </a>
+        </h3>
+        <p class="creative-description">
+          Satirical design commentary on get-rich-quick schemes. Available as apparel.
+        </p>
+      </div>
+    </div>
+
+    <div class="creative-card">
+      <img class="creative-image" src="assets/images/peer-reviewed.jpg" alt="If it's not peer reviewed, I'm not interested T-Shirt">
+      <div class="creative-content">
+        <h3 class="creative-title">
+          <a href="https://citationrequired.creator-spring.com/listing/not-peer-reviewed-not-interest?product=2&variation=2397" target="_blank">
+            Not Peer-Reviewed
+          </a>
+        </h3>
+        <p class="creative-description">
+          A shirt for skeptics and science enthusiasts who appreciate proper methodology.
+        </p>
+      </div>
+    </div>
+
+    <div class="creative-card">
+      <img class="creative-image" src="assets/images/sorry.jpg" alt="Sorry, I'm Canadian T-Shirt">
+      <div class="creative-content">
+        <h3 class="creative-title">
+          <a href="https://clusterstorm.creator-spring.com/listing/sorry-i-m-canadian?product=2&variation=2397" target="_blank">
+            Sorry, I'm Canadian
+          </a>
+        </h3>
+        <p class="creative-description">
+          Embracing the stereotype with pride — a quintessentially Canadian apology.
+        </p>
+      </div>
+    </div>
+
     <div class="creative-card">
       <div class="creative-image">🎵</div>
       <div class="creative-content">
@@ -256,73 +308,30 @@
       </div>
     </div>
 
-    <div class="creative-card">
-      <div class="creative-image">👕</div>
-      <div class="creative-content">
-        <h3 class="creative-title">
-          <a href="https://www.spreadshirt.ca/shop/design/the+dunning+kruger+effect+mens+t-shirt-D6309fd74b9bc177600cdc87f?sellable=Jk7YOG7m83hbXn8VlBQN-210-7" target="_blank">The Dunning-Kruger
-            Effect</a>
-        </h3>
-        <p class="creative-description">
-          Best-selling t-shirt design featuring a humorous take on cognitive bias — perfect for the confidently incorrect.
-        </p>
-      </div>
-    </div>
-
-    <div class="creative-card">
-      <div class="creative-image">📖</div>
-      <div class="creative-content">
-        <h3 class="creative-title">
-          <a href="https://citationrequired.creator-spring.com/listing/how-to-get-rich?product=212&variation=5819" target="_blank">"How to Get Rich" Book</a>
-        </h3>
-        <p class="creative-description">
-          Satirical design commentary on get-rich-quick schemes. Available as apparel.
-        </p>
-      </div>
-    </div>
-
-    <div class="creative-card">
-      <div class="creative-image">🔬</div>
-      <div class="creative-content">
-        <h3 class="creative-title">
-          <a href="https://citationrequired.creator-spring.com/listing/not-peer-reviewed-not-interest?product=2&variation=2397" target="_blank">"Not Peer-Reviewed"</a>
-        </h3>
-        <p class="creative-description">
-          A shirt for skeptics and science enthusiasts who appreciate proper methodology.
-        </p>
-      </div>
-    </div>
-
-    <div class="creative-card">
-      <div class="creative-image">🍁</div>
-      <div class="creative-content">
-        <h3 class="creative-title">
-          <a href="https://clusterstorm.creator-spring.com/listing/sorry-i-m-canadian?product=2&variation=2397" target="_blank">"Sorry, I'm Canadian"</a>
-        </h3>
-        <p class="creative-description">
-          Embracing the stereotype with pride — a quintessentially Canadian apology.
-        </p>
-      </div>
-    </div>
   </div>
 
   <div class="rock-opera">
     <div class="rock-opera-content">
       <p class="rock-opera-label">Solo Creative Project</p>
-      <h3 class="rock-opera-title">Animated Christmas Viking Metal Rock Opera</h3>
+      <h3 class="rock-opera-title">A Very Viking Christmas</h3>
+
+      <img class="rock-opera-visual" src="assets/images/vvx.jpg" alt="A Very Viking Christmas on YouTube">
+
       <p class="rock-opera-description">
-        A complete animated rock opera combining original music, animation, and storytelling into one festive metal experience. Every aspect created solo — from composition and recording to animation
-        and video editing.
+        A complete animated rock opera combining original music, animation, and storytelling into one festive metal experience. Every aspect created solo — from composition and recording to animation and video editing.
+      </p>
+      <p class="rock-opera-description">
+        Music recorded and edited using Ableton Live, with Native Instruments and iZotope plugins. Modelling, animation, simulation, and rendering in Blender, using motion-capture animations from Mixamo. Film edited using DaVinci Resolve.
+      </p>
+      <p class="rock-opera-description">
+        Probably the best animated Christmas viking metal rock opera on YouTube!
       </p>
       <p class="rock-opera-credits">
-        Written • Recorded • Animated • Edited — Solo Project
+        Written • Performed • Recorded • Animated • Edited
       </p>
       <a href="https://www.youtube.com/watch?v=SRexAdcBbE8" class="btn btn-primary" target="_blank">
         Watch on YouTube
       </a>
-    </div>
-    <div class="rock-opera-visual">
-      🎸🎄⚔️
     </div>
   </div>
 </section>
@@ -330,11 +339,12 @@
 <footer>
   <div class="footer-links">
     <a href="https://github.com/KevinCarr42" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/kevincarr42/" target="_blank">LinkedIn</a>
     <a href="https://www.pond5.com/artist/kevincarr42?tab=music" target="_blank">Pond5</a>
-    <a href="https://www.youtube.com/watch?v=SRexAdcBbE8" target="_blank">YouTube</a>
+    <a href="https://www.youtube.com/channel/UCmIj-y2TJFuovb-iJSnYPiw" target="_blank">YouTube</a>
   </div>
   <p class="footer-text">
-    Kevin Carr — Developer & Creative
+    Kevin Carr Portfolio
   </p>
 </footer>
 </body>
