@@ -97,10 +97,19 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.0rem;
     letter-spacing: 0.15em;
+}
+
+.logo a {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+    opacity: 0.8;
 }
 
 .nav-links {
@@ -268,6 +277,17 @@ section {
 /* Featured Projects */
 #featured {
     background: var(--bg-secondary);
+    position: relative;
+}
+
+#featured::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
 }
 
 .featured-grid {
@@ -366,6 +386,21 @@ section {
     height: 16px;
 }
 
+/* Projects Section */
+#projects {
+    position: relative;
+}
+
+#projects::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
@@ -430,6 +465,21 @@ section {
     background: var(--bg-primary);
 }
 
+#tools {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+#tools::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
 .small-section .projects-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
@@ -444,7 +494,7 @@ section {
 
 /* Creative Section */
 #creative {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     position: relative;
 }
 
@@ -508,6 +558,22 @@ section {
 .creative-description {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+/* Rock Opera Section */
+#rock-opera-section {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+#rock-opera-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
 }
 
 /* Rock Opera Feature */
